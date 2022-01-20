@@ -1,0 +1,1147 @@
+@font-face {
+  src: url(/Template/assets/fonts/Chivo/Chivo-Regular.ttf);
+  src: url(/Template/assets/fonts/Chivo/Chivo-Bold.ttf);
+
+  font-family: Chivo_Regular;
+  font-family: Chivo;
+}
+.header_space {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.header_logo_style {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.nav_tab {
+  margin: 0px 10px;
+  font-family: Chivo;
+  font-weight: 400;
+  color: black;
+}
+.header_btn_login {
+  font-weight: bold;
+}
+.header_btn_signup {
+  font-family: Chivo;
+  margin: 0px 5px;
+  background-color: #6241d4;
+  color: #ffffff;
+}
+// hero section
+.hero_space {
+  margin: 0px 50px;
+}
+.hero_text_style {
+  h1 {
+    font-size: 45px;
+    font-family: Chivo;
+    font-weight: 400;
+    color: #060c3c;
+    line-height: 58px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: Chivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5d6180;
+    margin-bottom: 30px;
+  }
+}
+.hero_search {
+  background-color: white;
+  width: 500px;
+  display: inline;
+  padding: 10px;
+  padding-right: 5px !important;
+  border: 1px solid #b4b6c4;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  h6 {
+    display: inline;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 162% */
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+  }
+  button {
+    display: inline;
+    background-color: #6241d4;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-left: 100px;
+  }
+}
+.hero_ib_style {
+  border: 1px solid #b4b6c4;
+  padding: 10px 0px;
+  border-radius: 10px;
+  h6 {
+    display: inline;
+    color: #b4b6c4;
+    font-family: Chivo;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-right: 40px;
+    padding-left: 20px;
+  }
+  button {
+    margin-left: 160px;
+    background-color: blueviolet;
+    color: #ffffff;
+  }
+}
+.hero_ib_p_style {
+  p {
+    font-family: Chivo;
+    font-style: italic;
+    color: #5d6180;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.hero_plus_style {
+  h1 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    color: #060c3c;
+  }
+  p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    /* Greyscale/Grey */
+
+    color: #5d6180;
+  }
+}
+.hero_img {
+  img {
+    width: 540px;
+    height: 548px;
+  }
+}
+
+// Logo section
+.logo_section_space {
+  padding: 0px 100px;
+}
+.logo_style {
+  img {
+    width: 152px;
+    height: 40px;
+  }
+}
+// how our section is easy to use?
+.easytouse_space {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.easytouse_text {
+  width: 50%;
+  margin: 0px 250px;
+  h1 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 54px;
+    /* or 123% */
+
+    text-align: center;
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+}
+.easytouse_img_style {
+  img {
+    width: 248px;
+    height: 180px;
+  }
+}
+.easytouse_text2_style {
+  h3 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 145% */
+
+    text-align: center;
+    font-feature-settings: "ordn" on;
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+  p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 156% */
+
+    text-align: center;
+
+    /* Greyscale/Grey */
+
+    color: #5d6180;
+  }
+}
+.easytouse_direction {
+  img {
+    width: 150px;
+    // padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+  }
+}
+//The reasons to prefer choosing our platform
+.ourplateform_space {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.ourplateform_img {
+  img {
+    width: 519px;
+    height: 448px;
+  }
+}
+.ourplateform_text {
+  h1 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 54px;
+    /* or 123% */
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+  p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    /* Greyscale/Grey */
+
+    color: #5d6180;
+  }
+}
+.ourplateform_text2_style {
+  h3 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    /* identical to box height, or 145% */
+
+    font-feature-settings: "ordn" on;
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+  p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    /* or 162% */
+
+    /* Greyscale/Grey */
+
+    color: #5d6180;
+  }
+}
+
+//We provide features for your product
+.weprovide_space {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.weprovide_text {
+  h1 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    /* or 123% */
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+}
+.weprovide_shadow {
+  width: 480px;
+  height: 176px;
+  background: #ffffff;
+  /* Card Shadow 1 */
+
+  box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  .weprovide_style2 {
+    img {
+      display: inline;
+      margin-right: 10px;
+    }
+    h3 {
+      display: inline-block;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 32px;
+      /* identical to box height, or 145% */
+
+      font-feature-settings: "ordn" on;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+    p {
+      display: inline-block;
+      margin-left: 55px;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+    a {
+      display: inline;
+      margin-left: 55px;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 125% */
+
+      text-decoration-line: underline;
+      font-feature-settings: "ordn" on;
+
+      /* Purple/Purple */
+
+      color: #6241d4;
+    }
+  }
+}
+.weprovide_ip_style {
+  img {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  p {
+    display: inline-block;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+
+    /* identical to box height, or 145% */
+
+    font-feature-settings: "ordn" on;
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+  }
+}
+.weprovide_heroimg {
+  img {
+    width: 536px;
+    height: 550px;
+  }
+}
+//Trusted by company around the world
+.trustedbycompany_space {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.trustedbycom_global_style {
+  h3 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    text-align: center;
+
+    /* Yellow/Yellow */
+
+    color: #ffd43d;
+  }
+}
+
+.trustedbycompany_h1_style {
+  h1 {
+    width: 50%;
+    margin-left: 270px;
+    margin-right: 270px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    /* or 123% */
+
+    text-align: center;
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+}
+.trustedbycompany_map {
+  img {
+    padding-right: 100px;
+    // width: 90%;
+    width: 1112px;
+    height: 370px;
+  }
+}
+.trustedbycompany_hp {
+  h1 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+    /* identical to box height, or 128% */
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+  p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    /* Greyscale/Grey */
+
+    color: #5d6180;
+  }
+}
+// See what our customers have to say about us
+
+.customer {
+  h1 {
+    width: 50%;
+    margin-left: 270px;
+    margin-right: 270px;
+
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    /* or 123% */
+
+    text-align: center;
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+}
+.customer_card {
+  background: #f4f1ff;
+  border-radius: 6px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 30px;
+  //   padding-bottom: 20px;
+  .card_content {
+    img {
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: Chivo;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      /* or 24px */
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+  }
+  .card_bottom {
+    img {
+      display: inline-block;
+    }
+    h3 {
+      display: inline-block;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      margin-left: 10px;
+      position: relative;
+      bottom: 10px;
+      /* identical to box height, or 133% */
+
+      font-feature-settings: "ordn" on;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+    p {
+      position: relative;
+      bottom: 25px;
+      margin-left: 65px;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      /* identical to box height, or 162% */
+
+      /* Purple/Purple */
+
+      color: #6241d4;
+    }
+  }
+}
+.footer_section_color {
+  background-color: #060c3c;
+}
+.footer_leftcontent {
+  h1 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height, or 123% */
+
+    /* White */
+
+    color: #ffffff;
+  }
+  p {
+    width: 400px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 156% */
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+
+    opacity: 0.8;
+  }
+}
+
+.footer_search {
+  background-color: white;
+  width: 500px;
+  display: inline;
+  padding: 10px;
+  padding-right: 5px !important;
+  border: 1px solid white;
+  border-radius: 5px;
+  h6 {
+    display: inline;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+  }
+  button {
+    display: inline;
+    background-color: #6241d4;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-left: 100px;
+  }
+}
+.footer_bottomsection {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  p {
+    width: 344px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+  }
+}
+.footer_bottom_email {
+  p {
+    display: inline;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+    margin-left: 10px;
+  }
+}
+.footer_col {
+  h5 {
+    color: white;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: flex-end;
+
+    /* White */
+
+    color: #ffffff;
+  }
+  h6 {
+    color: #b4b6c4;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: flex-end;
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+  }
+}
+.footer_2020 {
+  p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    display: flex;
+    align-items: flex-end;
+
+    /* Greyscale/Grey Pale */
+
+    color: #b4b6c4;
+
+    opacity: 0.8;
+  }
+}
+.footer_icons {
+  display: inline;
+  float: right;
+  img {
+    margin-right: 20px;
+  }
+}
+// ipad view
+@media (min-width: 768px) and (max-width: 1199.98px) {
+}
+// mobile view
+@media (max-width: 767px) {
+  .header_space {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .hero_space {
+    margin: 0px;
+  }
+  .hero_text_style {
+    h1 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 38px;
+      /* or 119% */
+
+      text-align: center;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+    p {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+
+      text-align: center;
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+  }
+  .hero_plus_style {
+    display: none;
+  }
+  .hero_img img {
+    width: 327px;
+    height: 335px;
+  }
+  .hero_search {
+    h6 {
+      display: inline;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: #b4b6c4;
+    }
+    button {
+      display: inline;
+      background-color: #6241d4;
+      color: white;
+      border: transparent;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 60px;
+    }
+  }
+  .logo_section_space {
+    padding: 0px;
+  }
+  .logo_style img {
+    width: 90px;
+    height: 19px;
+  }
+  .easytouse_space {
+    margin: 0px;
+  }
+  .easytouse_text {
+    width: 100%;
+    margin: 0px;
+
+    h1 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 32px;
+      /* or 123% */
+
+      text-align: center;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+  }
+  .easytouse_text2_style {
+    h3 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      /* or 133% */
+
+      text-align: center;
+      font-feature-settings: "ordn" on;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+    p {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+
+      text-align: center;
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+  }
+  .easytouse_direction img {
+    transform: rotate(90deg);
+    width: 150px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 80px;
+  }
+  .ourplateform_space {
+    margin: 0px;
+  }
+  .ourplateform_text2_style h3 {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: "ordn" on;
+    color: #060c3c;
+  }
+  .ourplateform_text2_style p {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #5d6180;
+  }
+  .ourplateform_text {
+    h1 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 32px;
+      /* or 123% */
+
+      text-align: center;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+    p {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+
+      text-align: center;
+      font-feature-settings: "ordn" on;
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+  }
+  .ourplateform_img img {
+    width: 327px;
+    height: 318px;
+  }
+  .weprovide_space {
+    margin: 0px;
+  }
+  .weprovide_heroimg img {
+    width: 327px;
+    height: 335px;
+  }
+  .weprovide_text {
+    h1 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 32px;
+      /* or 123% */
+
+      text-align: center;
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+  }
+  .weprovide_shadow {
+    width: 327px;
+    height: 182px;
+    background: #ffffff;
+    box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .weprovide_shadow .weprovide_style2 h3 {
+    display: inline-block;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: "ordn" on;
+    color: #060c3c;
+  }
+  .weprovide_ip_style p {
+    display: inline-block;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    font-feature-settings: "ordn" on;
+    color: #b4b6c4;
+  }
+  .trustedbycompany_space {
+    margin: 0px;
+  }
+  .trustedbycompany_h1_style h1 {
+    width: 100%;
+    margin: 0px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    /* or 123% */
+
+    text-align: center;
+
+    /* Greyscale/Dark Grey */
+
+    color: #060c3c;
+  }
+  .trustedbycompany_map img {
+    padding-right: 0px;
+    width: 340px;
+    height: 170px;
+  }
+  .trustedbycompany_hp {
+    h1 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 26px;
+      /* identical to box height, or 124% */
+
+      /* Greyscale/Dark Grey */
+
+      color: #060c3c;
+    }
+    p {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      /* or 171% */
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+  }
+  .customer h1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: #060c3c;
+  }
+  .customer_card .card_content p {
+    margin-bottom: 10px;
+    font-family: Chivo;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5d6180;
+  }
+  .customer_card .card_bottom h3 {
+    display: inline-block;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 10px;
+    font-feature-settings: "ordn" on;
+    color: #060c3c;
+  }
+  .footer_leftcontent {
+    h1 {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 32px;
+      /* identical to box height, or 123% */
+
+      text-align: center;
+
+      /* White */
+
+      color: #ffffff;
+    }
+    p {
+      width: 327px;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      /* or 156% */
+
+      text-align: center;
+
+      /* Greyscale/Grey Pale */
+
+      color: #b4b6c4;
+
+      opacity: 0.8;
+    }
+  }
+  .footer_search {
+    h6 {
+      display: inline;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: #b4b6c4;
+    }
+    button {
+      display: inline;
+      background-color: #6241d4;
+      color: white;
+      border: transparent;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 60px;
+    }
+  }
+  .footer_bottomsection {
+    img {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+    p {
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+
+      text-align: center;
+
+      /* Greyscale/Grey Pale */
+
+      color: #b4b6c4;
+    }
+  }
+  .footer_bottom_email {
+    img {
+      margin-left: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer_col {
+    h5 {
+      font-size: 14px;
+    }
+    h6 {
+      font-size: 14px;
+    }
+  }
+  .footer_2020 {
+    p {
+      margin-left: 40px;
+    }
+  }
+  .footer_icons {
+    margin-right: 100px;
+  }
+}
