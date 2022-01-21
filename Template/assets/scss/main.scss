@@ -1,13 +1,24 @@
+@import "./var";
+@import "./mixin";
 @font-face {
-  src: url(/Template/assets/fonts/Chivo/Chivo-Regular.ttf);
-  src: url(/Template/assets/fonts/Chivo/Chivo-Bold.ttf);
-
-  font-family: Chivo_Regular;
   font-family: Chivo;
+  src: url(/Template/assets/fonts/Chivo/Fonts/Chivo-Light.woff2) format("woff2");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: Chivo;
+  src: url(/Template/assets/fonts/Chivo/Fonts/Chivo-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+.nav_bot {
+  margin-bottom: 100px;
 }
 .header_space {
-  margin-left: 120px;
-  margin-right: 120px;
+  background-color: $comman_color;
+  // box-shadow: 0px 5px 8px -4px rgba(0, 0, 0, 0.75);
+  @include main_space;
 }
 .header_logo_style {
   img {
@@ -17,97 +28,98 @@
 }
 .nav_tab {
   margin: 0px 10px;
-  font-family: Chivo;
-  font-weight: 400;
+  font-family: $primary_fonts;
+  font-weight: light;
   color: black;
 }
 .header_btn_login {
-  font-weight: bold;
+  @include header_btns;
 }
 .header_btn_signup {
-  font-family: Chivo;
+  @include header_btns;
   margin: 0px 5px;
-  background-color: #6241d4;
-  color: #ffffff;
 }
 // hero section
 .hero_space {
   margin: 0px 50px;
 }
+
 .hero_text_style {
   h1 {
     font-size: 45px;
-    font-family: Chivo;
-    font-weight: 400;
+    font-family: $primary_fonts;
+    font-weight: bold;
+
     color: #060c3c;
     line-height: 58px;
     margin-bottom: 15px;
   }
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: light;
+    // font-style: italic;
     line-height: 28px;
     color: #5d6180;
     margin-bottom: 30px;
   }
 }
+
+.hero_bg_position {
+  position: relative;
+}
+.hero_child {
+  img {
+    width: 540px;
+    height: 556px;
+  }
+  position: absolute;
+  z-index: 0;
+}
 .hero_search {
-  background-color: white;
-  width: 500px;
-  display: inline;
-  padding: 10px;
-  padding-right: 5px !important;
-  border: 1px solid #b4b6c4;
-  border-radius: 5px;
-  margin-top: 10px;
+  width: 90%;
 
-  h6 {
-    display: inline;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 162% */
-
-    /* Greyscale/Grey Pale */
-
-    color: #b4b6c4;
+  .input_style {
+    border-right: transparent;
+  }
+  .span_color {
+    background-color: $comman_color;
   }
   button {
     display: inline;
-    background-color: #6241d4;
-    color: white;
-    border: transparent;
+    font-family: $primary_fonts;
+    font-weight: bold;
+    background-color: $primary_color;
+    color: $comman_color;
+    border: 1px solid $primary_color;
     border-radius: 5px;
     padding: 5px 20px;
-    margin-left: 100px;
+    // margin-left: 100px;
+  }
+  button:hover {
+    background-color: $comman_color;
+    border: 1px solid $primary_color;
+    color: $primary_color;
   }
 }
-.hero_ib_style {
-  border: 1px solid #b4b6c4;
-  padding: 10px 0px;
-  border-radius: 10px;
-  h6 {
-    display: inline;
-    color: #b4b6c4;
-    font-family: Chivo;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    padding-right: 40px;
-    padding-left: 20px;
-  }
-  button {
-    margin-left: 160px;
-    background-color: blueviolet;
-    color: #ffffff;
-  }
-}
-.hero_ib_p_style {
+.hero_input_p {
   p {
     font-family: Chivo;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    /* Greyscale/Grey */
+
+    color: #5d6180;
+  }
+}
+
+.hero_ib_p_style {
+  p {
+    font-family: $primary_fonts;
     font-style: italic;
     color: #5d6180;
     font-size: 16px;
@@ -116,17 +128,17 @@
 }
 .hero_plus_style {
   h1 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 44px;
     line-height: 54px;
     color: #060c3c;
   }
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
@@ -137,6 +149,8 @@
   }
 }
 .hero_img {
+  position: relative;
+  z-index: 10;
   img {
     width: 540px;
     height: 548px;
@@ -155,17 +169,16 @@
 }
 // how our section is easy to use?
 .easytouse_space {
-  margin-left: 120px;
-  margin-right: 120px;
+  @include main_space;
 }
 
 .easytouse_text {
   width: 50%;
   margin: 0px 250px;
   h1 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 46px;
     line-height: 54px;
     /* or 123% */
@@ -183,11 +196,19 @@
     height: 180px;
   }
 }
+// .dire {
+//   ::before {
+//     content: url("/Template/assets/images/Direction\ Line.svg");
+//   }
+//   ::after {
+//     content: url("/Template/assets/images/Direction\ Line.svg");
+//   }
+// }
 .easytouse_text2_style {
   h3 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     line-height: 32px;
     /* or 145% */
@@ -200,9 +221,9 @@
     color: #060c3c;
   }
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 17px;
     line-height: 28px;
     /* or 156% */
@@ -213,6 +234,9 @@
 
     color: #5d6180;
   }
+}
+.easy_dir_space {
+  margin-left: 30px;
 }
 .easytouse_direction {
   img {
@@ -226,20 +250,33 @@
 }
 //The reasons to prefer choosing our platform
 .ourplateform_space {
-  margin-left: 120px;
-  margin-right: 120px;
+  @include main_space;
 }
 .ourplateform_img {
+  position: relative;
+  z-index: 10;
   img {
-    width: 519px;
+    width: 420px;
     height: 448px;
   }
 }
+
+.ourplateform_pattern {
+  position: relative;
+}
+.our_child {
+  img {
+    width: 482px;
+    height: 457px;
+  }
+  position: absolute;
+  z-index: 0;
+}
 .ourplateform_text {
   h1 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 44px;
     line-height: 54px;
     /* or 123% */
@@ -249,10 +286,10 @@
     color: #060c3c;
   }
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: light;
+    font-size: 20px;
     line-height: 28px;
     /* or 156% */
 
@@ -263,9 +300,9 @@
 }
 .ourplateform_text2_style {
   h3 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 22px;
     line-height: 32px;
     /* identical to box height, or 145% */
@@ -277,9 +314,9 @@
     color: #060c3c;
   }
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 20px;
     line-height: 26px;
     /* or 162% */
@@ -292,14 +329,13 @@
 
 //We provide features for your product
 .weprovide_space {
-  margin-left: 120px;
-  margin-right: 120px;
+  @include main_space;
 }
 .weprovide_text {
   h1 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 44px;
     line-height: 54px;
     /* or 123% */
@@ -309,15 +345,24 @@
     color: #060c3c;
   }
 }
+.accordion-item {
+  background-color: #fff;
+  border: none;
+}
 .weprovide_shadow {
-  width: 480px;
-  height: 176px;
-  background: #ffffff;
-  /* Card Shadow 1 */
+  .accordion-item {
+    background-color: #fff;
+    border: none;
+  }
 
-  box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
-  border-radius: 12px;
-  padding: 20px;
+  &:hover {
+    background: #ffffff;
+    /* Card Shadow 1 */
+
+    box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+  }
   .weprovide_style2 {
     img {
       display: inline;
@@ -325,9 +370,9 @@
     }
     h3 {
       display: inline-block;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 22px;
       line-height: 32px;
       /* identical to box height, or 145% */
@@ -341,9 +386,9 @@
     p {
       display: inline-block;
       margin-left: 55px;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 16px;
       line-height: 26px;
       /* or 162% */
@@ -355,9 +400,9 @@
     a {
       display: inline;
       margin-left: 55px;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 16px;
       line-height: 20px;
       /* identical to box height, or 125% */
@@ -367,7 +412,7 @@
 
       /* Purple/Purple */
 
-      color: #6241d4;
+      color: $primary_color;
     }
   }
 }
@@ -379,9 +424,9 @@
   }
   p {
     display: inline-block;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 22px;
     line-height: 32px;
 
@@ -394,7 +439,20 @@
     color: #b4b6c4;
   }
 }
+.we_pattern {
+  position: relative;
+}
+.we_child {
+  img {
+    width: 403px;
+    height: 460px;
+  }
+  position: absolute;
+  z-index: 0;
+}
 .weprovide_heroimg {
+  position: relative;
+  z-index: 10;
   img {
     width: 536px;
     height: 550px;
@@ -402,14 +460,13 @@
 }
 //Trusted by company around the world
 .trustedbycompany_space {
-  margin-left: 120px;
-  margin-right: 120px;
+  @include main_space;
 }
 .trustedbycom_global_style {
   h3 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 28px;
     /* identical to box height, or 156% */
@@ -428,9 +485,9 @@
     margin-left: 270px;
     margin-right: 270px;
 
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 44px;
     line-height: 54px;
     /* or 123% */
@@ -442,19 +499,16 @@
     color: #060c3c;
   }
 }
-.trustedbycompany_map {
-  img {
-    padding-right: 100px;
-    // width: 90%;
-    width: 1112px;
-    height: 370px;
-  }
+.trustedbycompany_map img {
+  padding-right: 100px;
+  width: 1060px;
+  height: 370px;
 }
 .trustedbycompany_hp {
   h1 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 36px;
     line-height: 46px;
     /* identical to box height, or 128% */
@@ -464,9 +518,9 @@
     color: #060c3c;
   }
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* or 162% */
@@ -477,17 +531,19 @@
   }
 }
 // See what our customers have to say about us
-
+.card_space {
+  @include main_space;
+}
 .customer {
   h1 {
     width: 50%;
     margin-left: 270px;
     margin-right: 270px;
 
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
-    font-size: 44px;
+    font-weight: bold;
+    font-size: 38px;
     line-height: 54px;
     /* or 123% */
 
@@ -511,9 +567,9 @@
     }
     p {
       margin-bottom: 20px;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: italic;
-      font-weight: normal;
+      font-weight: light;
       font-size: 18px;
       line-height: 150%;
       /* or 24px */
@@ -529,9 +585,9 @@
     }
     h3 {
       display: inline-block;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 18px;
       line-height: 24px;
       margin-left: 10px;
@@ -549,27 +605,54 @@
       position: relative;
       bottom: 25px;
       margin-left: 65px;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 16px;
       line-height: 26px;
       /* identical to box height, or 162% */
 
       /* Purple/Purple */
 
-      color: #6241d4;
+      color: $primary_color;
     }
   }
 }
 .footer_section_color {
   background-color: #060c3c;
 }
+.f_space {
+  @include main_space;
+}
+.position {
+  position: relative;
+}
+.child {
+  img {
+    width: 500px;
+    height: 246px;
+  }
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+}
+.child_left_bottom {
+  img {
+    width: 124px;
+    height: 164px;
+  }
+  position: absolute;
+  z-index: 0;
+  left: -120px;
+  bottom: 60px;
+}
 .footer_leftcontent {
+  position: relative;
+  z-index: 10;
   h1 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 40px;
     line-height: 54px;
     /* identical to box height, or 123% */
@@ -580,9 +663,9 @@
   }
   p {
     width: 400px;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 28px;
     /* or 156% */
@@ -594,38 +677,33 @@
     opacity: 0.8;
   }
 }
-
 .footer_search {
-  background-color: white;
-  width: 500px;
-  display: inline;
-  padding: 10px;
-  padding-right: 5px !important;
-  border: 1px solid white;
-  border-radius: 5px;
-  h6 {
-    display: inline;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
+  width: 450px;
 
-    /* Greyscale/Grey Pale */
-
-    color: #b4b6c4;
+  .input_style {
+    border-right: transparent;
+  }
+  .span_color {
+    background-color: $comman_color;
   }
   button {
     display: inline;
-    background-color: #6241d4;
-    color: white;
-    border: transparent;
+    font-family: $primary_fonts;
+    font-weight: bold;
+    background-color: $primary_color;
+    color: $comman_color;
+    border: 1px solid $primary_color;
     border-radius: 5px;
     padding: 5px 20px;
-    margin-left: 100px;
+    // margin-left: 100px;
+  }
+  button:hover {
+    background-color: $comman_color;
+    border: 1px solid $primary_color;
+    color: $primary_color;
   }
 }
+
 .footer_bottomsection {
   img {
     width: 50px;
@@ -633,9 +711,9 @@
   }
   p {
     width: 344px;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* or 162% */
@@ -646,11 +724,14 @@
   }
 }
 .footer_bottom_email {
+  a {
+    text-decoration: none;
+  }
   p {
     display: inline;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* identical to box height, or 162% */
@@ -659,14 +740,23 @@
 
     color: #b4b6c4;
     margin-left: 10px;
+    &:hover {
+      color: $comman_color;
+    }
   }
 }
 .footer_col {
+  a {
+    text-decoration: none;
+    a:hover {
+      color: $comman_color;
+    }
+  }
   h5 {
-    color: white;
-    font-family: Chivo;
+    color: $comman_color;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     /* identical to box height, or 125% */
@@ -680,9 +770,9 @@
   }
   h6 {
     color: #b4b6c4;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* identical to box height, or 162% */
@@ -693,13 +783,16 @@
     /* Greyscale/Grey Pale */
 
     color: #b4b6c4;
+    &:hover {
+      color: $comman_color;
+    }
   }
 }
 .footer_2020 {
   p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -723,6 +816,104 @@
 }
 // ipad view
 @media (min-width: 768px) and (max-width: 1199.98px) {
+  .header_space {
+    margin: 0px;
+  }
+  .hero_space {
+    margin: 0px;
+  }
+  .hero_search {
+    width: 90%;
+
+    .input_style {
+      border-right: transparent;
+    }
+    .span_color {
+      background-color: $comman_color;
+    }
+    button {
+      display: inline;
+      font-family: $primary_fonts;
+      font-weight: bold;
+      background-color: $primary_color;
+      color: $comman_color;
+      border: 1px solid $primary_color;
+      border-radius: 5px;
+      padding: 5px 20px;
+      // margin-left: 100px;
+    }
+    button:hover {
+      background-color: $comman_color;
+      border: 1px solid $primary_color;
+      color: $primary_color;
+    }
+  }
+  .hero_input_p {
+    p {
+      font-family: Chivo;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      /* identical to box height, or 24px */
+
+      /* Greyscale/Grey */
+
+      color: #5d6180;
+    }
+  }
+
+  .logo_section_space {
+    padding: 0px;
+  }
+  .easytouse_space {
+    margin: 0px;
+  }
+  // .easy_dir_space {
+  //   margin-left: 0px;
+  // }
+  .easytouse_text {
+    width: 100%;
+    margin: 0px;
+  }
+  .ourplateform_space {
+    margin: 0px;
+  }
+  .weprovide_space {
+    margin: 0px;
+  }
+  .trustedbycompany_space {
+    margin: 0px;
+  }
+  .trustedbycompany_h1_style h1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: $primary_fonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: #060c3c;
+  }
+  .trustedbycompany_map img {
+    padding-right: 0px;
+    width: 700px;
+    height: 370px;
+  }
+  .customer h1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: $primary_fonts;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: #060c3c;
+  }
 }
 // mobile view
 @media (max-width: 767px) {
@@ -733,35 +924,85 @@
   .hero_space {
     margin: 0px;
   }
+  .hero_child img {
+    width: 320px;
+    height: 383px;
+  }
+  .our_child img {
+    width: 300px;
+    height: 320px;
+  }
+  .we_child img {
+    width: 300px;
+    height: 325px;
+  }
   .hero_text_style {
     h1 {
-      font-family: Chivo;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 32px;
-      line-height: 38px;
-      /* or 119% */
-
-      text-align: center;
-
-      /* Greyscale/Dark Grey */
-
+      font-size: 30px;
+      font-family: $primary_fonts;
+      font-weight: bold;
       color: #060c3c;
+      line-height: 35px;
+      margin-bottom: 15px;
+      text-align: center;
     }
     p {
-      font-family: Chivo;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
-      /* or 156% */
-
       text-align: center;
-
-      /* Greyscale/Grey */
-
+      font-family: "Chivo", sans-serif;
+      font-size: 19px;
+      font-weight: light;
+      line-height: 28px;
       color: #5d6180;
+      margin-bottom: 30px;
     }
+  }
+
+  .hero_search {
+    .hero_text_style {
+      .input_style {
+        border-right: transparent;
+      }
+      .span_color {
+        background-color: $comman_color;
+      }
+      h1 {
+        font-family: $primary_fonts;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        /* or 119% */
+
+        text-align: center;
+
+        /* Greyscale/Dark Grey */
+
+        color: #060c3c;
+      }
+      p {
+        font-family: $primary_fonts;
+        font-style: normal;
+        font-weight: light;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+
+        text-align: center;
+
+        /* Greyscale/Grey */
+
+        color: #5d6180;
+      }
+    }
+  }
+  .hero_input_p p {
+    font-family: Chivo;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #5d6180;
+    width: 88%;
   }
   .hero_plus_style {
     display: none;
@@ -771,23 +1012,24 @@
     height: 335px;
   }
   .hero_search {
+    // display: none;
     h6 {
-      display: inline;
-      font-family: Chivo;
+      display: none;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 16px;
       line-height: 26px;
       color: #b4b6c4;
     }
     button {
       display: inline;
-      background-color: #6241d4;
-      color: white;
+      background-color: $primary_color;
+      color: $comman_color;
       border: transparent;
       border-radius: 5px;
       padding: 5px 10px;
-      margin-left: 60px;
+      // margin-left: 60px;
     }
   }
   .logo_section_space {
@@ -805,9 +1047,6 @@
     margin: 0px;
 
     h1 {
-      font-family: Chivo;
-      font-style: normal;
-      font-weight: normal;
       font-size: 26px;
       line-height: 32px;
       /* or 123% */
@@ -819,11 +1058,14 @@
       color: #060c3c;
     }
   }
+  .easy_dir_space {
+    margin-left: 0px;
+  }
   .easytouse_text2_style {
     h3 {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 18px;
       line-height: 24px;
       /* or 133% */
@@ -836,9 +1078,9 @@
       color: #060c3c;
     }
     p {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 16px;
       line-height: 26px;
       /* or 162% */
@@ -852,38 +1094,38 @@
   }
   .easytouse_direction img {
     transform: rotate(90deg);
-    width: 150px;
+    width: 120px;
     padding-right: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 10px;
-    margin-left: 80px;
+    margin-left: 100px;
   }
   .ourplateform_space {
     margin: 0px;
   }
   .ourplateform_text2_style h3 {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     font-feature-settings: "ordn" on;
     color: #060c3c;
   }
   .ourplateform_text2_style p {
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 17px;
     line-height: 20px;
     color: #5d6180;
   }
   .ourplateform_text {
     h1 {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 26px;
       line-height: 32px;
       /* or 123% */
@@ -895,9 +1137,9 @@
       color: #060c3c;
     }
     p {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 18px;
       line-height: 28px;
       /* or 156% */
@@ -923,9 +1165,9 @@
   }
   .weprovide_text {
     h1 {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 26px;
       line-height: 32px;
       /* or 123% */
@@ -939,7 +1181,7 @@
   }
   .weprovide_shadow {
     width: 327px;
-    height: 182px;
+    height: 100px;
     background: #ffffff;
     box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
     border-radius: 12px;
@@ -947,9 +1189,9 @@
   }
   .weprovide_shadow .weprovide_style2 h3 {
     display: inline-block;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 32px;
     font-feature-settings: "ordn" on;
@@ -957,9 +1199,9 @@
   }
   .weprovide_ip_style p {
     display: inline-block;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 20px;
     font-feature-settings: "ordn" on;
@@ -971,9 +1213,9 @@
   .trustedbycompany_h1_style h1 {
     width: 100%;
     margin: 0px;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     /* or 123% */
@@ -991,9 +1233,9 @@
   }
   .trustedbycompany_hp {
     h1 {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 21px;
       line-height: 26px;
       /* identical to box height, or 124% */
@@ -1003,9 +1245,9 @@
       color: #060c3c;
     }
     p {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 12px;
       line-height: 20px;
       /* or 171% */
@@ -1015,13 +1257,17 @@
       color: #5d6180;
     }
   }
+  .card_space {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .customer h1 {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     text-align: center;
@@ -1029,18 +1275,18 @@
   }
   .customer_card .card_content p {
     margin-bottom: 10px;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: italic;
-    font-weight: normal;
+    font-weight: light;
     font-size: 14px;
     line-height: 24px;
     color: #5d6180;
   }
   .customer_card .card_bottom h3 {
     display: inline-block;
-    font-family: Chivo;
+    font-family: $primary_fonts;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     margin-left: 10px;
@@ -1049,11 +1295,14 @@
     font-feature-settings: "ordn" on;
     color: #060c3c;
   }
+  .footer_section_color {
+    overflow: hidden;
+  }
   .footer_leftcontent {
     h1 {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 26px;
       line-height: 32px;
       /* identical to box height, or 123% */
@@ -1066,9 +1315,9 @@
     }
     p {
       width: 327px;
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 18px;
       line-height: 28px;
       /* or 156% */
@@ -1082,35 +1331,76 @@
       opacity: 0.8;
     }
   }
+  .f_space {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .child {
+    position: absolute;
+    z-index: 0;
+    right: -50px;
+    top: -50px;
+  }
+  .child img {
+    width: 250px;
+    height: 246px;
+  }
   .footer_search {
-    h6 {
-      display: inline;
-      font-family: Chivo;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 26px;
-      color: #b4b6c4;
+    width: 100%;
+
+    .input_style {
+      border-right: transparent;
+    }
+    .span_color {
+      background-color: $comman_color;
     }
     button {
       display: inline;
-      background-color: #6241d4;
-      color: white;
-      border: transparent;
+      font-family: $primary_fonts;
+      font-weight: bold;
+      background-color: $primary_color;
+      color: $comman_color;
+      border: 1px solid $primary_color;
       border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 60px;
+      padding: 5px 20px;
+      // margin-left: 100px;
+    }
+    button:hover {
+      background-color: $comman_color;
+      border: 1px solid $primary_color;
+      color: $primary_color;
     }
   }
+
+  // .footer_search {
+  //   h6 {
+  //     display: inline;
+  //     font-family: $primary_fonts;
+  //     font-style: normal;
+  //     font-weight: light;
+  //     font-size: 16px;
+  //     line-height: 26px;
+  //     color: #b4b6c4;
+  //   }
+  //   button {
+  //     display: inline;
+  //     background-color: $primary_color;
+  //     color: $comman_color;
+  //     border: transparent;
+  //     border-radius: 5px;
+  //     padding: 5px 10px;
+  //     margin-left: 60px;
+  //   }
+  // }
   .footer_bottomsection {
     img {
       margin-left: 120px;
       margin-right: 120px;
     }
     p {
-      font-family: Chivo;
+      font-family: $primary_fonts;
       font-style: normal;
-      font-weight: normal;
+      font-weight: light;
       font-size: 16px;
       line-height: 26px;
       /* or 162% */

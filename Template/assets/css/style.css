@@ -1,12 +1,21 @@
 @font-face {
-  src: url(/Template/assets/fonts/Chivo/Chivo-Regular.ttf);
-  src: url(/Template/assets/fonts/Chivo/Chivo-Bold.ttf);
-  font-family: Chivo_Regular;
-  font-family: Chivo; }
+  font-family: Chivo;
+  src: url(/Template/assets/fonts/Chivo/Fonts/Chivo-Light.woff2) format("woff2");
+  font-weight: light;
+  font-style: normal; }
+
+@font-face {
+  font-family: Chivo;
+  src: url(/Template/assets/fonts/Chivo/Fonts/Chivo-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
+.nav_bot {
+  margin-bottom: 100px; }
 
 .header_space {
-  margin-left: 120px;
-  margin-right: 120px; }
+  background-color: white;
+  margin: 0px 120px; }
 
 .header_logo_style img {
   width: 50px;
@@ -14,112 +23,115 @@
 
 .nav_tab {
   margin: 0px 10px;
-  font-family: Chivo;
-  font-weight: 400;
+  font-family: "Chivo", sans-serif;
+  font-weight: light;
   color: black; }
 
 .header_btn_login {
+  font-family: "Chivo", sans-serif;
   font-weight: bold; }
+  .header_btn_login:hover {
+    background-color: #6241d4;
+    color: white; }
 
 .header_btn_signup {
-  font-family: Chivo;
-  margin: 0px 5px;
-  background-color: #6241d4;
-  color: #ffffff; }
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
+  margin: 0px 5px; }
+  .header_btn_signup:hover {
+    background-color: #6241d4;
+    color: white; }
 
 .hero_space {
   margin: 0px 50px; }
 
 .hero_text_style h1 {
   font-size: 45px;
-  font-family: Chivo;
-  font-weight: 400;
+  font-family: "Chivo", sans-serif;
+  font-weight: bold;
   color: #060c3c;
   line-height: 58px;
   margin-bottom: 15px; }
 
 .hero_text_style p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: light;
   line-height: 28px;
   color: #5d6180;
   margin-bottom: 30px; }
 
+.hero_bg_position {
+  position: relative; }
+
+.hero_child {
+  position: absolute;
+  z-index: 0; }
+  .hero_child img {
+    width: 540px;
+    height: 556px; }
+
 .hero_search {
-  background-color: white;
-  width: 500px;
-  display: inline;
-  padding: 10px;
-  padding-right: 5px !important;
-  border: 1px solid #b4b6c4;
-  border-radius: 5px;
-  margin-top: 10px; }
-  .hero_search h6 {
-    display: inline;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 162% */
-    /* Greyscale/Grey Pale */
-    color: #b4b6c4; }
+  width: 90%; }
+  .hero_search .input_style {
+    border-right: transparent; }
+  .hero_search .span_color {
+    background-color: white; }
   .hero_search button {
     display: inline;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
     background-color: #6241d4;
     color: white;
-    border: transparent;
+    border: 1px solid #6241d4;
     border-radius: 5px;
-    padding: 5px 20px;
-    margin-left: 100px; }
+    padding: 5px 20px; }
+  .hero_search button:hover {
+    background-color: white;
+    border: 1px solid #6241d4;
+    color: #6241d4; }
 
-.hero_ib_style {
-  border: 1px solid #b4b6c4;
-  padding: 10px 0px;
-  border-radius: 10px; }
-  .hero_ib_style h6 {
-    display: inline;
-    color: #b4b6c4;
-    font-family: Chivo;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    padding-right: 40px;
-    padding-left: 20px; }
-  .hero_ib_style button {
-    margin-left: 160px;
-    background-color: blueviolet;
-    color: #ffffff; }
+.hero_input_p p {
+  font-family: Chivo;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* Greyscale/Grey */
+  color: #5d6180; }
 
 .hero_ib_p_style p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: italic;
   color: #5d6180;
   font-size: 16px;
   line-height: 150%; }
 
 .hero_plus_style h1 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 44px;
   line-height: 54px;
   color: #060c3c; }
 
 .hero_plus_style p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
   /* Greyscale/Grey */
   color: #5d6180; }
 
-.hero_img img {
-  width: 540px;
-  height: 548px; }
+.hero_img {
+  position: relative;
+  z-index: 10; }
+  .hero_img img {
+    width: 540px;
+    height: 548px; }
 
 .logo_section_space {
   padding: 0px 100px; }
@@ -129,16 +141,15 @@
   height: 40px; }
 
 .easytouse_space {
-  margin-left: 120px;
-  margin-right: 120px; }
+  margin: 0px 120px; }
 
 .easytouse_text {
   width: 50%;
   margin: 0px 250px; }
   .easytouse_text h1 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 46px;
     line-height: 54px;
     /* or 123% */
@@ -151,9 +162,9 @@
   height: 180px; }
 
 .easytouse_text2_style h3 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 32px;
   /* or 145% */
@@ -163,15 +174,18 @@
   color: #060c3c; }
 
 .easytouse_text2_style p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 17px;
   line-height: 28px;
   /* or 156% */
   text-align: center;
   /* Greyscale/Grey */
   color: #5d6180; }
+
+.easy_dir_space {
+  margin-left: 30px; }
 
 .easytouse_direction img {
   width: 150px;
@@ -181,17 +195,29 @@
   margin-right: 10px; }
 
 .ourplateform_space {
-  margin-left: 120px;
-  margin-right: 120px; }
+  margin: 0px 120px; }
 
-.ourplateform_img img {
-  width: 519px;
-  height: 448px; }
+.ourplateform_img {
+  position: relative;
+  z-index: 10; }
+  .ourplateform_img img {
+    width: 420px;
+    height: 448px; }
+
+.ourplateform_pattern {
+  position: relative; }
+
+.our_child {
+  position: absolute;
+  z-index: 0; }
+  .our_child img {
+    width: 482px;
+    height: 457px; }
 
 .ourplateform_text h1 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 44px;
   line-height: 54px;
   /* or 123% */
@@ -199,19 +225,19 @@
   color: #060c3c; }
 
 .ourplateform_text p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: light;
+  font-size: 20px;
   line-height: 28px;
   /* or 156% */
   /* Greyscale/Grey */
   color: #5d6180; }
 
 .ourplateform_text2_style h3 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 22px;
   line-height: 32px;
   /* identical to box height, or 145% */
@@ -220,9 +246,9 @@
   color: #060c3c; }
 
 .ourplateform_text2_style p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 20px;
   line-height: 26px;
   /* or 162% */
@@ -230,65 +256,74 @@
   color: #5d6180; }
 
 .weprovide_space {
-  margin-left: 120px;
-  margin-right: 120px; }
+  margin: 0px 120px; }
 
 .weprovide_text h1 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 44px;
   line-height: 54px;
   /* or 123% */
   /* Greyscale/Dark Grey */
   color: #060c3c; }
 
-.weprovide_shadow {
-  width: 480px;
-  height: 176px;
+.accordion-item {
+  background-color: #fff;
+  border: none; }
+
+.weprovide_shadow .accordion-item {
+  background-color: #fff;
+  border: none; }
+
+.weprovide_shadow:hover {
   background: #ffffff;
   /* Card Shadow 1 */
   box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
   border-radius: 12px;
   padding: 20px; }
-  .weprovide_shadow .weprovide_style2 img {
-    display: inline;
-    margin-right: 10px; }
-  .weprovide_shadow .weprovide_style2 h3 {
-    display: inline-block;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 32px;
-    /* identical to box height, or 145% */
-    font-feature-settings: "ordn" on;
-    /* Greyscale/Dark Grey */
-    color: #060c3c; }
-  .weprovide_shadow .weprovide_style2 p {
-    display: inline-block;
-    margin-left: 55px;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
-    /* Greyscale/Grey */
-    color: #5d6180; }
-  .weprovide_shadow .weprovide_style2 a {
-    display: inline;
-    margin-left: 55px;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 125% */
-    text-decoration-line: underline;
-    font-feature-settings: "ordn" on;
-    /* Purple/Purple */
-    color: #6241d4; }
+
+.weprovide_shadow .weprovide_style2 img {
+  display: inline;
+  margin-right: 10px; }
+
+.weprovide_shadow .weprovide_style2 h3 {
+  display: inline-block;
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+  font-feature-settings: "ordn" on;
+  /* Greyscale/Dark Grey */
+  color: #060c3c; }
+
+.weprovide_shadow .weprovide_style2 p {
+  display: inline-block;
+  margin-left: 55px;
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: light;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  /* Greyscale/Grey */
+  color: #5d6180; }
+
+.weprovide_shadow .weprovide_style2 a {
+  display: inline;
+  margin-left: 55px;
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  text-decoration-line: underline;
+  font-feature-settings: "ordn" on;
+  /* Purple/Purple */
+  color: #6241d4; }
 
 .weprovide_ip_style img {
   display: inline-block;
@@ -297,9 +332,9 @@
 
 .weprovide_ip_style p {
   display: inline-block;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 22px;
   line-height: 32px;
   /* identical to box height, or 145% */
@@ -307,18 +342,30 @@
   /* Greyscale/Grey Pale */
   color: #b4b6c4; }
 
-.weprovide_heroimg img {
-  width: 536px;
-  height: 550px; }
+.we_pattern {
+  position: relative; }
+
+.we_child {
+  position: absolute;
+  z-index: 0; }
+  .we_child img {
+    width: 403px;
+    height: 460px; }
+
+.weprovide_heroimg {
+  position: relative;
+  z-index: 10; }
+  .weprovide_heroimg img {
+    width: 536px;
+    height: 550px; }
 
 .trustedbycompany_space {
-  margin-left: 120px;
-  margin-right: 120px; }
+  margin: 0px 120px; }
 
 .trustedbycom_global_style h3 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 18px;
   line-height: 28px;
   /* identical to box height, or 156% */
@@ -330,9 +377,9 @@
   width: 50%;
   margin-left: 270px;
   margin-right: 270px;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 44px;
   line-height: 54px;
   /* or 123% */
@@ -342,13 +389,13 @@
 
 .trustedbycompany_map img {
   padding-right: 100px;
-  width: 1112px;
+  width: 1060px;
   height: 370px; }
 
 .trustedbycompany_hp h1 {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 36px;
   line-height: 46px;
   /* identical to box height, or 128% */
@@ -356,23 +403,26 @@
   color: #060c3c; }
 
 .trustedbycompany_hp p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
   /* Greyscale/Grey */
   color: #5d6180; }
 
+.card_space {
+  margin: 0px 120px; }
+
 .customer h1 {
   width: 50%;
   margin-left: 270px;
   margin-right: 270px;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 44px;
+  font-weight: bold;
+  font-size: 38px;
   line-height: 54px;
   /* or 123% */
   text-align: center;
@@ -389,9 +439,9 @@
     margin-bottom: 20px; }
   .customer_card .card_content p {
     margin-bottom: 20px;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: italic;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 150%;
     /* or 24px */
@@ -401,9 +451,9 @@
     display: inline-block; }
   .customer_card .card_bottom h3 {
     display: inline-block;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     margin-left: 10px;
@@ -417,9 +467,9 @@
     position: relative;
     bottom: 25px;
     margin-left: 65px;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* identical to box height, or 162% */
@@ -429,54 +479,72 @@
 .footer_section_color {
   background-color: #060c3c; }
 
-.footer_leftcontent h1 {
-  font-family: Chivo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 54px;
-  /* identical to box height, or 123% */
-  /* White */
-  color: #ffffff; }
+.f_space {
+  margin: 0px 120px; }
 
-.footer_leftcontent p {
-  width: 400px;
-  font-family: Chivo;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 28px;
-  /* or 156% */
-  /* Greyscale/Grey Pale */
-  color: #b4b6c4;
-  opacity: 0.8; }
+.position {
+  position: relative; }
+
+.child {
+  position: absolute;
+  z-index: 0;
+  right: 0px; }
+  .child img {
+    width: 500px;
+    height: 246px; }
+
+.child_left_bottom {
+  position: absolute;
+  z-index: 0;
+  left: -120px;
+  bottom: 60px; }
+  .child_left_bottom img {
+    width: 124px;
+    height: 164px; }
+
+.footer_leftcontent {
+  position: relative;
+  z-index: 10; }
+  .footer_leftcontent h1 {
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height, or 123% */
+    /* White */
+    color: #ffffff; }
+  .footer_leftcontent p {
+    width: 400px;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+    font-weight: light;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 156% */
+    /* Greyscale/Grey Pale */
+    color: #b4b6c4;
+    opacity: 0.8; }
 
 .footer_search {
-  background-color: white;
-  width: 500px;
-  display: inline;
-  padding: 10px;
-  padding-right: 5px !important;
-  border: 1px solid white;
-  border-radius: 5px; }
-  .footer_search h6 {
-    display: inline;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
-    /* Greyscale/Grey Pale */
-    color: #b4b6c4; }
+  width: 450px; }
+  .footer_search .input_style {
+    border-right: transparent; }
+  .footer_search .span_color {
+    background-color: white; }
   .footer_search button {
     display: inline;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
     background-color: #6241d4;
     color: white;
-    border: transparent;
+    border: 1px solid #6241d4;
     border-radius: 5px;
-    padding: 5px 20px;
-    margin-left: 100px; }
+    padding: 5px 20px; }
+  .footer_search button:hover {
+    background-color: white;
+    border: 1px solid #6241d4;
+    color: #6241d4; }
 
 .footer_bottomsection img {
   width: 50px;
@@ -484,32 +552,42 @@
 
 .footer_bottomsection p {
   width: 344px;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
   /* Greyscale/Grey Pale */
   color: #b4b6c4; }
 
+.footer_bottom_email a {
+  text-decoration: none; }
+
 .footer_bottom_email p {
   display: inline;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 16px;
   line-height: 26px;
   /* identical to box height, or 162% */
   /* Greyscale/Grey Pale */
   color: #b4b6c4;
   margin-left: 10px; }
+  .footer_bottom_email p:hover {
+    color: white; }
+
+.footer_col a {
+  text-decoration: none; }
+  .footer_col a a:hover {
+    color: white; }
 
 .footer_col h5 {
   color: white;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height, or 125% */
@@ -520,9 +598,9 @@
 
 .footer_col h6 {
   color: #b4b6c4;
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 16px;
   line-height: 26px;
   /* identical to box height, or 162% */
@@ -530,11 +608,13 @@
   align-items: flex-end;
   /* Greyscale/Grey Pale */
   color: #b4b6c4; }
+  .footer_col h6:hover {
+    color: white; }
 
 .footer_2020 p {
-  font-family: Chivo;
+  font-family: "Chivo", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
@@ -550,42 +630,152 @@
   .footer_icons img {
     margin-right: 20px; }
 
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .header_space {
+    margin: 0px; }
+  .hero_space {
+    margin: 0px; }
+  .hero_search {
+    width: 90%; }
+    .hero_search .input_style {
+      border-right: transparent; }
+    .hero_search .span_color {
+      background-color: white; }
+    .hero_search button {
+      display: inline;
+      font-family: "Chivo", sans-serif;
+      font-weight: bold;
+      background-color: #6241d4;
+      color: white;
+      border: 1px solid #6241d4;
+      border-radius: 5px;
+      padding: 5px 20px; }
+    .hero_search button:hover {
+      background-color: white;
+      border: 1px solid #6241d4;
+      color: #6241d4; }
+  .hero_input_p p {
+    font-family: Chivo;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    /* Greyscale/Grey */
+    color: #5d6180; }
+  .logo_section_space {
+    padding: 0px; }
+  .easytouse_space {
+    margin: 0px; }
+  .easytouse_text {
+    width: 100%;
+    margin: 0px; }
+  .ourplateform_space {
+    margin: 0px; }
+  .weprovide_space {
+    margin: 0px; }
+  .trustedbycompany_space {
+    margin: 0px; }
+  .trustedbycompany_h1_style h1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: #060c3c; }
+  .trustedbycompany_map img {
+    padding-right: 0px;
+    width: 700px;
+    height: 370px; }
+  .customer h1 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: "Chivo", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: #060c3c; } }
+
 @media (max-width: 767px) {
   .header_space {
     margin-left: 0px;
     margin-right: 0px; }
   .hero_space {
     margin: 0px; }
+  .hero_child img {
+    width: 320px;
+    height: 383px; }
+  .our_child img {
+    width: 300px;
+    height: 320px; }
+  .we_child img {
+    width: 300px;
+    height: 325px; }
   .hero_text_style h1 {
-    font-family: Chivo;
+    font-size: 30px;
+    font-family: "Chivo", sans-serif;
+    font-weight: bold;
+    color: #060c3c;
+    line-height: 35px;
+    margin-bottom: 15px;
+    text-align: center; }
+  .hero_text_style p {
+    text-align: center;
+    font-family: "Chivo", sans-serif;
+    font-size: 19px;
+    font-weight: light;
+    line-height: 28px;
+    color: #5d6180;
+    margin-bottom: 30px; }
+  .hero_search .hero_text_style .input_style {
+    border-right: transparent; }
+  .hero_search .hero_text_style .span_color {
+    background-color: white; }
+  .hero_search .hero_text_style h1 {
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 32px;
     line-height: 38px;
     /* or 119% */
     text-align: center;
     /* Greyscale/Dark Grey */
     color: #060c3c; }
-  .hero_text_style p {
-    font-family: Chivo;
+  .hero_search .hero_text_style p {
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
     text-align: center;
     /* Greyscale/Grey */
     color: #5d6180; }
+  .hero_input_p p {
+    font-family: Chivo;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    color: #5d6180;
+    width: 88%; }
   .hero_plus_style {
     display: none; }
   .hero_img img {
     width: 327px;
     height: 335px; }
   .hero_search h6 {
-    display: inline;
-    font-family: Chivo;
+    display: none;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     color: #b4b6c4; }
@@ -595,8 +785,7 @@
     color: white;
     border: transparent;
     border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 60px; }
+    padding: 5px 10px; }
   .logo_section_space {
     padding: 0px; }
   .logo_style img {
@@ -608,19 +797,18 @@
     width: 100%;
     margin: 0px; }
     .easytouse_text h1 {
-      font-family: Chivo;
-      font-style: normal;
-      font-weight: normal;
       font-size: 26px;
       line-height: 32px;
       /* or 123% */
       text-align: center;
       /* Greyscale/Dark Grey */
       color: #060c3c; }
+  .easy_dir_space {
+    margin-left: 0px; }
   .easytouse_text2_style h3 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     /* or 133% */
@@ -629,9 +817,9 @@
     /* Greyscale/Dark Grey */
     color: #060c3c; }
   .easytouse_text2_style p {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* or 162% */
@@ -640,33 +828,33 @@
     color: #5d6180; }
   .easytouse_direction img {
     transform: rotate(90deg);
-    width: 150px;
+    width: 120px;
     padding-right: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 10px;
-    margin-left: 80px; }
+    margin-left: 100px; }
   .ourplateform_space {
     margin: 0px; }
   .ourplateform_text2_style h3 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     font-feature-settings: "ordn" on;
     color: #060c3c; }
   .ourplateform_text2_style p {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 17px;
     line-height: 20px;
     color: #5d6180; }
   .ourplateform_text h1 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     /* or 123% */
@@ -674,9 +862,9 @@
     /* Greyscale/Dark Grey */
     color: #060c3c; }
   .ourplateform_text p {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
@@ -693,9 +881,9 @@
     width: 327px;
     height: 335px; }
   .weprovide_text h1 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     /* or 123% */
@@ -704,25 +892,25 @@
     color: #060c3c; }
   .weprovide_shadow {
     width: 327px;
-    height: 182px;
+    height: 100px;
     background: #ffffff;
     box-shadow: 0px 8px 40px -2px rgba(6, 12, 59, 0.08);
     border-radius: 12px;
     padding: 10px; }
   .weprovide_shadow .weprovide_style2 h3 {
     display: inline-block;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 32px;
     font-feature-settings: "ordn" on;
     color: #060c3c; }
   .weprovide_ip_style p {
     display: inline-block;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 20px;
     font-feature-settings: "ordn" on;
@@ -732,9 +920,9 @@
   .trustedbycompany_h1_style h1 {
     width: 100%;
     margin: 0px;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     /* or 123% */
@@ -746,47 +934,50 @@
     width: 340px;
     height: 170px; }
   .trustedbycompany_hp h1 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     /* identical to box height, or 124% */
     /* Greyscale/Dark Grey */
     color: #060c3c; }
   .trustedbycompany_hp p {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 12px;
     line-height: 20px;
     /* or 171% */
     /* Greyscale/Grey */
     color: #5d6180; }
+  .card_space {
+    margin-left: 0px;
+    margin-right: 0px; }
   .customer h1 {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     text-align: center;
     color: #060c3c; }
   .customer_card .card_content p {
     margin-bottom: 10px;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: italic;
-    font-weight: normal;
+    font-weight: light;
     font-size: 14px;
     line-height: 24px;
     color: #5d6180; }
   .customer_card .card_bottom h3 {
     display: inline-block;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     margin-left: 10px;
@@ -794,10 +985,12 @@
     bottom: 10px;
     font-feature-settings: "ordn" on;
     color: #060c3c; }
+  .footer_section_color {
+    overflow: hidden; }
   .footer_leftcontent h1 {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
     /* identical to box height, or 123% */
@@ -806,9 +999,9 @@
     color: #ffffff; }
   .footer_leftcontent p {
     width: 327px;
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
@@ -816,29 +1009,43 @@
     /* Greyscale/Grey Pale */
     color: #b4b6c4;
     opacity: 0.8; }
-  .footer_search h6 {
-    display: inline;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    color: #b4b6c4; }
-  .footer_search button {
-    display: inline;
-    background-color: #6241d4;
-    color: white;
-    border: transparent;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 60px; }
+  .f_space {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .child {
+    position: absolute;
+    z-index: 0;
+    right: -50px;
+    top: -50px; }
+  .child img {
+    width: 250px;
+    height: 246px; }
+  .footer_search {
+    width: 100%; }
+    .footer_search .input_style {
+      border-right: transparent; }
+    .footer_search .span_color {
+      background-color: white; }
+    .footer_search button {
+      display: inline;
+      font-family: "Chivo", sans-serif;
+      font-weight: bold;
+      background-color: #6241d4;
+      color: white;
+      border: 1px solid #6241d4;
+      border-radius: 5px;
+      padding: 5px 20px; }
+    .footer_search button:hover {
+      background-color: white;
+      border: 1px solid #6241d4;
+      color: #6241d4; }
   .footer_bottomsection img {
     margin-left: 120px;
     margin-right: 120px; }
   .footer_bottomsection p {
-    font-family: Chivo;
+    font-family: "Chivo", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: light;
     font-size: 16px;
     line-height: 26px;
     /* or 162% */

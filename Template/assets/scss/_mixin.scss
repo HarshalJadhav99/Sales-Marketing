@@ -1,0 +1,12 @@
+@mixin main_space {
+  margin: 0px 120px;
+}
+@mixin header_btns {
+  font-family: $primary_fonts;
+  font-weight: bold;
+  &:hover {
+    background-color: $primary_color;
+    color: white;
+    // border: 1px solid$primary_color;
+  }
+}
